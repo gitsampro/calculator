@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+   
+}
+
+body{
+    
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    background-color: #EEA47F;
+    /* animation: blinkingBackground 20s infinite; */
+    
+}
+
+.calculator{
+    
+    padding:4px ;
+    /* padding-right: 400px;
+    padding-bottom: 200px; */
+    box-shadow: 0 0 35px #df6363;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: #00539C;
+    
+}
+.display{
+    padding-bottom: 0px;
+}
+.display input{
+    background-color: #42ff4e;
+    width: 9em;
+    border: 10px;
+    border-radius:10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    
+    color: #100c0c;
+    font-family:sans-serif;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    outline: 3px solid #191616;
+
+}
+
+input::placeholder{
+    color: #090505;
+}
+
+button{
+    
+    background: #1e1919;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    /* background: transparent; */
+    color: #fcfcfc;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    border-radius: 100%;
+    box-shadow: -5px -6px 15px #000;
+    outline: 1px solid #ffffff;
+    outline-offset: 3px;
+    cursor: pointer;
+}
+
+button:active{
+    background: #3d3e3d;
+    transform: translate(5px, 5px);
+}
+
+.opr{
+    color: #fbff00;
+    background: #1e1919;
+    font-weight: 700;
+}
+
+#eqBtn{
+    background: orangered;
+    font-weight: 900;
+}
+.title{
+    color: #ffffff;
+    width: 40em;
+    font-size: 10px;
+    font-weight: 200;
+    
+    background: transparent;
+
+}
+.info{
+    color: #fbff03;
+    height:16px;
+    width:370px;
+    font-weight: 200px;
+    font-size: 15px;
+    align-content: center;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #1e1919;
+    border: #100c0c;
+    border-width: 20px;
+    border-color:white;
+   padding-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    
+  }
+.blink{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    animation: blinkingText 3s infinite;
+}
+@keyframes blinkingText{
+    0%		{ color: #10c018;}
+    25%		{ color: #ffffff;}
+    50%		{ color: #0ae0ef;}
+    75%		{ color: #f5e901;}
+    100%	{ color: #ff09ff;}
+}
+
+@keyframes blinkingBackground{
+    0%		{ background-color: #f5f6f4;}
+    20%		{ background-color: #82b882;}
+    25%		{ background-color: #7aa9ef;}
+    30%		{ background-color: #e27aee;}
+    35%		{ background-color: #659ef3;}
+    40%		{ background-color: #c88387;}
+    50%		{ background-color: #69a2f7;}
+    75%		{ background-color: #708183;}
+    80%		{ background-color: #7a91b3;}
+    90%		{ background-color: #e2f258;}
+    100%	{ background-color: #d69e9e;}
+}
