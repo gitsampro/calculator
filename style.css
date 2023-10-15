@@ -114,6 +114,10 @@ button:active{
     border-color:white;
    padding-bottom: 20px;
 }
+marquee{
+    font-size: 22px;
+    font-weight: 600;
+}
 a {
     text-decoration: none;
     
